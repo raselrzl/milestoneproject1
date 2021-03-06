@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Roboto:wght@300&display=swap');
 body{
-    background-color: green;
-    
+    margin:0;
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;  
 }
+
+/*--------Navbar--Start-------*/
+.nav-bg-color{
+    background-color: #f1f1f1;
+}
+/*--------Navbar--End---------*/
+/*------Home----Start------*/
+#home-section{
+    margin:0;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("assets/images/doctorhp.jpg") no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+/*------Home----end------*/
