@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Roboto:wght@300&display=swap');
+body{
+    margin:0px;
+    padding: 0px; 
+    font-family: 'Roboto', sans-serif;  
+    width: 100vw;
+ }
+
+/*--------Navbar--Start-------*/
+.nav-bg-color{
+    background-color: #f1f1f1;}
+.logo a{    
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+/*--------Navbar--End---------*/
+/*------Home----Start------*/
+#home-section{
+    margin:0;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("https://einsteinperspectives.com/wp-content/uploads/2016/12/primary-care-doctor-1024x683.jpg") no-repeat;
+    height: 600px;
+    width: 100vw;
+    background-size: cover;
+    background-position: center; 
+}
+
+.home-title{
+    margin-left: 40px;
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -50%);
+    color: rgba(245, 245, 245, 0.8);
+}
+.home-title p{
+    padding-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.btn-main{
+    border:1px solid #fff;
+    padding:10px 30px;
+    color:#000;
+    background: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 8px;
+}
+/*------Home----end------*/
+/*------Doctors----Start------*/
+.doctor-section{
+    margin-top:50px;
+}
+.doctor{
+    height: 300px;
+}
+
+/*------Doctors----End------*/
+/*------Medicine----Start------*/
+#medicine-home{
+    margin-top:50px;
+    margin-bottom:50px;
+    height: 300px;
+    background-color: rgb(218, 113, 113);
+}
+/*------Medicine----end------*/
+/*------footer----Start------*/
+.footer-section{
+    margin-top:50px;
+    margin-bottom:0px;
+    height: 100px;
+    background-color: rgb(117, 115, 115);
+}
+/*------footer----end------*/
