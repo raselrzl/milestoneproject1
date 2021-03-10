@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Roboto:wght@300&display=swap');
-body{
-    margin:0px;
+html,body{
+    margin:0;
     padding: 0px; 
     font-family: 'Roboto', sans-serif;  
     width: 100%;
     scroll-behavior: smooth;
+    top:0;
+    left:0;
  }
 
  ul {
@@ -16,14 +18,61 @@ body{
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
+    
 }
 .nav-bg-color{
-    background-color: #f1f1f1;
+    background-color: #14381A;
 }
 .logo a{    
     font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 900;    
 }
+#navbar-content{
+    margin-left: auto;
+}
+.navbar-light .navbar-toggler {
+    color:rgba(245, 245, 245, 0.8);
+    border-color: rgba(245, 245, 245, 0.8);
+}
+.nav-item{
+    margin-left: auto;
+}
+.nav-items{
+    margin-left: 15px;
+}
+#nav-button-toggle
+{
+    background-color:rgba(245, 245, 245, 0.8);
+    border-radius: 5px;
+}
+#nav-button-search{
+    border: 1px solid rgba(245, 245, 245, 0.8);
+}
+#nav-button-search,
+#nav-button-logo,
+#nav-button-home,
+#nav-button-doctor,
+#nav-button-store,
+#nav-button-contact{
+    color: rgba(245, 245, 245, 0.8);
+}
+#nav-button-home:hover,
+#nav-button-doctor:hover,
+#nav-button-store:hover,
+#nav-button-contact:hover{
+    color:#000;
+    background-color: #fff;
+    border-radius: 5px;
+    transition:ease-in-out;
+}
+.active{
+    border:1px solid rgba(245, 245, 245, 0.8);
+    border-radius:5px;
+}
+.display-inline{
+    display: inline;
+}
+
 /*--------Navbar--End---------*/
 /*------Home----Start------*/
 #home-section{
@@ -32,7 +81,7 @@ body{
     margin-bottom:50px;
     width:100%;
     color:#fff;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../images/doctorhp.jpg) no-repeat;
+    background:linear-gradient(rgba(61, 31, 31, 0.5),rgba(0,0,0,0.5)) ,url(../images/doctorhp.jpg) no-repeat;
     background-attachment: fixed;
     height: 650px;
     background-size: cover;
@@ -66,18 +115,45 @@ body{
 }
 /*------Home----end------*/
 /*------Doctors----Start------*/
+#popular-doctor-title{
+    text-align: center;
+}
+#popular-doctor-title-tern{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-position: center;
+    background-color: #000;
+}
 .doctor-section{
     position:relative;
     margin-top:50px;
     margin-bottom:50px;
     height: auto;
-    background-color: rgb(218, 113, 113);
     width:100%;
     padding: 24px;
-    color:#fff;
 }
 .doctor{
-    height: 100px;
+    max-height: 400px;
+    padding-top: 50px;
+    text-align: center;
+}
+.popular-doc{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin: 10px 30px 0 30px;
+    
+}
+.doctors-pic img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    margin-left: 40px;
+    
+    
 }
 
 
@@ -100,8 +176,8 @@ body{
     width:100%;
     padding: 24px;
     height: auto;
-    background-color: rgb(117, 115, 115);
-    color:rgb(26, 13, 13);
+    background-color: #14381A;
+    color:#fff;
 }
 /*------Downloadapp------*/
 .item-app-img{
@@ -131,7 +207,7 @@ body{
 }
 .carrier ul li a{
     text-decoration: none;
-    color:rgb(26, 13, 13);
+    color:#fff;
     transition: all .6s ease-in-out;
 }
 .carrier ul li a:hover{
@@ -147,7 +223,7 @@ body{
 }
 .support ul li a{
     text-decoration: none;
-    color:rgb(26, 13, 13);
+    color:#fff;
     transition: all .6s ease-in-out;
 }
 .support ul li a:hover{
@@ -167,7 +243,7 @@ body{
 }
 .social-link li a{
     text-decoration: none;
-    color:rgb(26, 13, 13);
+    color:#fff;
     transition: all .6s ease-in-out;
 }
 .social-link li a:hover{
@@ -200,6 +276,9 @@ body{
 
 @media only screen and (max-width: 767px) {
     #home-section{
-        height: 500px;       
+        height: 600px;       
+    }
+    .doctor{
+        height:auto;
     }
 }
