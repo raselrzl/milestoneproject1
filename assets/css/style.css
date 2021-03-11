@@ -162,13 +162,61 @@ html,body{
 #medicine-home{
     margin-top:50px;
     margin-bottom:50px;
-    height: 300px;
-    background-color: rgb(218, 113, 113);
+    height: auto;
     position:relative;
     width:100%;
     padding: 24px;
     color:#fff;
 }
+.medicine-offer-title{
+    position: relative;    
+    background:url(../images/offer1.jpg) no-repeat;
+    height:300px;
+    background-size: cover;
+    border-radius: 7px;
+}
+.medicine-list{
+    height: auto;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#methylprednisolone{
+    background:url(../images/medicine/methylprednisolone.jpg) center center no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height:200px;   
+    padding: 5px;
+}
+#ceftazidime{
+    background:url(../images/medicine/ceftazidime.jpg) center center no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height:200px;   
+    padding: 5px;
+}
+#isoniazid{
+    background:url(../images/medicine/isoniazid.jpg) center center no-repeat;
+    background-size: cover;  
+    background-position: center; 
+    height:200px;   
+    padding: 5px;    
+}
+#omeprazole{
+    background:url(../images/medicine/omeprazole.jpg) center center no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height:200px; 
+    padding: 5px;  
+}
+#medicine-pic{
+    margin-left:200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+
 /*------Medicine----end------*/
 /*------footer----Start------*/
 .footer-section{
@@ -178,6 +226,7 @@ html,body{
     height: auto;
     background-color: #14381A;
     color:#fff;
+
 }
 /*------Downloadapp------*/
 .item-app-img{
