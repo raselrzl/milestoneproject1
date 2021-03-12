@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- boootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- font-awsome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Medical</title>
 </head>
 <body>
+   <!--- navbar--->
+<section class="navbar-section">
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light nav-bg-color">
+      <div class="container logo">
+        <a class="navbar-brand" href="index.html"><div id="nav-button-logo">Medical</div></a>
+        <button class="navbar-toggler" id="nav-button-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
     
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto me-2 mb-lg-0 nav-item">
+              <li class="nav-items ">
+                <a class="nav-link " id="nav-button-home" href="index.html" >Home</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-link " id="nav-button-doctor" href="doctors.html">Doctors</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-link" id="nav-button-store" href="store.html">Store</a>
+              </li>  
+              <li class="nav-items">
+                <a class="nav-link active" id="nav-button-contact" href="contact.html" >Contact</a>
+              </li>        
+            </ul>
+            <form class="d-flex">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" id="nav-button-search" type="submit">Search</button>
+            </form>
+          </div>
+    </div>
+  </nav>
+</section>
+<!--- navbar end--->
+<!--- footer --Start-->
+<section class="footer-section container-fluid ">
+    <div class="row">
+       <div class="col-lg-3 col-md-6 col-sm-12 follow-us">
+           <h5>FOLLOW US</h5>
+           <ul class="social-link">
+               <li>
+                   <a target="_blank"href="#">
+                       <i class="fa fa-instagram" aria-hidden="true"></i>
+                       <span class="sr-only">instagram</span>
+                   </a>
+               </li> 
+               <li>
+                   <a target="_blank"href="#">
+                       <i class="fa fa-facebook" aria-hidden="true"></i>
+                       <span class="sr-only">Facebook</span>
+                   </a>
+               </li>   
+               <li>
+                   <a target="_blank"href="#">
+                       <i class="fa fa-youtube" aria-hidden="true"></i>
+                       <span class="sr-only">youtube</span>
+                   </a>
+               </li> 
+               <li>
+                   <a target="_blank"href="#">
+                       <i class="fa fa-twitter" aria-hidden="true"></i>
+                       <span class="sr-only">Twitter</span>
+                   </a>
+               </li>                 
+           </ul>
+
+       </div>
+       <div class="col-lg-3 col-md-6 col-sm-12 support">
+           <h5>SUPPORT</h5>
+           <ul>
+               <li>
+                   <a href="#">Contact Us</a>
+               </li> 
+               <li>
+                   <a href="#">About Us</a>
+               </li>                   
+           </ul> 
+
+       </div>
+       <div class="col-lg-3 col-md-6 col-sm-12 carrier">
+           <h5>CARRIER</h5>
+           <ul>
+               <li>
+                   <a href="#">Job</a>
+               </li> 
+               <li>
+                   <a href="#">Marketing</a>
+               </li>                   
+           </ul>                
+       </div>
+       <div class="col-lg-3 col-md-6 col-sm-12" id="download-app">
+           <h5>DOWNLOAD APPLICATION</h5>
+           <ul id="apps-list-items">
+               <li>
+                   
+                      <a href="#">
+                          <div  class="item-app-img">
+                           <img src="assets/images/appstore.png" alt="appstore image">
+                          </div>
+                       </a>
+                   
+               </li> 
+               <li>                   
+                      <a href="#">
+                       <div  class="item-app-img">
+                       <img src="assets/images/playstore.png" alt="playstore">
+                      </div>
+                   </a>
+                   
+               </li>                   
+           </ul> 
+
+       </div>
+   </div>
+</section>
+<!--- footer --End-->
+
+<!-- boootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>   
 </body>
 </html>

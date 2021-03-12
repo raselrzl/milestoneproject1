@@ -1,25 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Roboto:wght@300&display=swap');
-html,body{
-    margin:0;
-    padding: 0px; 
-    font-family: 'Roboto', sans-serif;  
-    width: 100%;
-    scroll-behavior: smooth;
-    top:0;
-    left:0;
+body{    
+    font-family: 'Roboto', sans-serif;   
  }
 
  ul {
     list-style: none;
 }
-
-/*--------Navbar--Start-------*/
-.navbar-section{
-    width: 100%;
+section{
+    width: 100vw;
     margin-left: 0px;
     margin-right: 0px;
-    
 }
+
+/*--------Navbar--Start-------*/
+
 .nav-bg-color{
     background-color: #14381A;
 }
@@ -79,7 +73,7 @@ html,body{
     position:relative;
     margin-top:0;
     margin-bottom:50px;
-    width:100%;
+    width:100vw;
     color:#fff;
     background:linear-gradient(rgba(61, 31, 31, 0.5),rgba(0,0,0,0.5)) ,url(../images/doctorhp.jpg) no-repeat;
     background-attachment: fixed;
@@ -121,9 +115,8 @@ html,body{
 #popular-doctor-title-tern{
     position: relative;
     height: 5px;
-    width: 100%;
-    margin-left: 80px;
-    margin-right: 80px;
+    width: 100vw;
+    
     background-position: center;
     background-color: #14381A;
 }
@@ -132,7 +125,7 @@ html,body{
     margin-top:50px;
     margin-bottom:50px;
     height: auto;
-    width:100%;
+    width:100vw;
     padding: 24px;
 }
 .doctor{
@@ -164,8 +157,7 @@ html,body{
     margin-bottom:50px;
     height: auto;
     position:relative;
-    width:100%;
-    padding: 24px;
+    width:100vw;
     color:#fff;
 }
 .medicine-offer-title{
@@ -175,53 +167,56 @@ html,body{
     background-size: cover;
     border-radius: 7px;
 }
-.medicine-list{
+#medicine-list{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
     height: auto;
     padding-top: 20px;
     text-align: center;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.medicine-name{
+    margin:10px 90px 10px 90px;
+   
 }
 #methylprednisolone{
     background:url(../images/medicine/methylprednisolone.jpg) center center no-repeat;
     background-size: cover; 
     background-position: center; 
     height:200px;   
-    padding: 5px;
+    
 }
 #ceftazidime{
     background:url(../images/medicine/ceftazidime.jpg) center center no-repeat;
     background-size: cover; 
     background-position: center; 
     height:200px;   
-    padding: 5px;
+    
 }
 #isoniazid{
     background:url(../images/medicine/isoniazid.jpg) center center no-repeat;
     background-size: cover;  
     background-position: center; 
     height:200px;   
-    padding: 5px;    
+       
 }
 #omeprazole{
     background:url(../images/medicine/omeprazole.jpg) center center no-repeat;
     background-size: cover; 
     background-position: center; 
     height:200px; 
-    padding: 5px;  
+     
 }
-#medicine-pic{
-    margin-left:200px;
-    margin-right: 200px;
-    margin-top: 50px;
-}
+
 
 
 /*------Medicine----end------*/
 /*------footer----Start------*/
 .footer-section{
     position:absolute;
-    width:100%;
+    width:100vw;
     padding: 24px;
     height: auto;
     background-color: #14381A;
@@ -229,27 +224,26 @@ html,body{
 
 }
 /*------Downloadapp------*/
-.item-app-img{
-    width: 120px; 
-    height:30px;      
-    margin-top: 15px;    
-    position: center;  
+#download-app{
+    text-align: center;   
+    
 }
-.item-app-img img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  border-radius: 5px; 
+.item-app-img{
+    margin: 0 auto;
+    width: 120px;     
+    padding:5px 0; 
+     
 }
 
-.download-app{
-    display: block;
-    justify-content: center;
+.item-app-img img{
+  width: 100%;
+  border-radius: 5px;
+  
 }
 /*------carrier------*/
 .carrier{
     text-align: center;
+    margin: 0 auto;
 }
 .carrier h5{
     padding-left: 22px;   
@@ -266,6 +260,7 @@ html,body{
 /*------support------*/
 .support{
     text-align: center;
+    margin: 0 auto;
 }
 .support h5{
     padding-left: 23px;
@@ -283,6 +278,7 @@ html,body{
 /*------follow us------*/
 .follow-us{
     text-align: center;
+    margin: 0 auto;
 }
 .follow-us h5{
     padding-left: 23px;
@@ -329,5 +325,9 @@ html,body{
     }
     .doctor{
         height:auto;
+    }
+    #medicine-list{
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
